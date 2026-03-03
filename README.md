@@ -72,23 +72,15 @@ Create a dashboard for healthcare analytics
 Design a portfolio website with dark mode
 ```
 
-### Custom Commands
+### Command
 
-**`/design <query>`** — Generate a complete design system:
-
-```
-/design beauty spa wellness
-/design fintech banking dashboard
-/design saas project management
-```
-
-**`/ui-search <query> [--domain <d>] [--stack <s>]`** — Search the design database:
+**`/ui-ux-promax <query> [--domain <d>] [--stack <s>]`**
 
 ```
-/ui-search "glassmorphism dark" --domain style
-/ui-search "elegant luxury" --domain typography
-/ui-search "animation accessibility" --domain ux
-/ui-search "responsive layout" --stack html-tailwind
+/ui-ux-promax beauty spa wellness luxury
+/ui-ux-promax "glassmorphism dark" --domain style
+/ui-ux-promax "elegant serif" --domain typography
+/ui-ux-promax "form validation" --stack react
 ```
 
 ### Direct CLI
@@ -141,8 +133,7 @@ python3 .qwen/skills/ui-ux-pro-max/scripts/search.py "SaaS dashboard" --design-s
 │       ├── core.py           # BM25 + regex hybrid engine
 │       └── design_system.py  # Design system generator
 └── commands/
-    ├── design.md             # /design command
-    └── ui-search.md          # /ui-search command
+    └── ui-ux-promax.md       # /ui-ux-promax command
 ```
 
 ## Credits

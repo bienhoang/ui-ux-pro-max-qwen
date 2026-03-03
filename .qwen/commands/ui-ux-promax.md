@@ -1,9 +1,7 @@
 ---
-name: ui-ux-pro-max
-description: "UI/UX design intelligence. 67 styles, 96 palettes, 57 font pairings, 25 charts, 13 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, mobile app. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode."
+description: "UI/UX Pro Max — generate design systems, search styles/colors/typography/UX guidelines"
 ---
-
-# UI/UX Pro Max - Design Intelligence
+# ui-ux-promax
 
 An AI-powered design intelligence toolkit providing searchable databases of UI styles, color palettes, font pairings, chart types, and UX guidelines. It uses a BM25 + regex hybrid search engine with 100 industry-specific reasoning rules to generate complete, tailored design systems.
 
@@ -85,10 +83,6 @@ Reference these guidelines when:
 - `color-guidance` - Use accessible color palettes
 - `data-table` - Provide table alternative for accessibility
 
-## How to Use
-
-Search specific domains using the CLI tool below.
-
 ---
 
 ## Prerequisites
@@ -118,7 +112,7 @@ winget install Python.Python.3.12
 
 ---
 
-## How to Use This Skill
+## How to Use This Workflow
 
 When user requests UI/UX work (design, build, create, implement, review, fix, improve), follow this workflow:
 
@@ -259,7 +253,7 @@ python3 $HOME/.qwen/skills/ui-ux-pro-max/scripts/search.py "beauty spa wellness 
 
 **Output:** Complete design system with pattern, style, colors, typography, effects, and anti-patterns.
 
-### Step 3: Supplement with Detailed Searches (as needed)
+### Step 3: Supplement with Detailed Searches (REQUIRED — run at least 2)
 
 ```bash
 # Get UX guidelines for animation and accessibility
@@ -275,7 +269,7 @@ python3 $HOME/.qwen/skills/ui-ux-pro-max/scripts/search.py "elegant luxury serif
 python3 $HOME/.qwen/skills/ui-ux-pro-max/scripts/search.py "layout responsive form" --stack html-tailwind
 ```
 
-**Then:** Synthesize design system + detailed searches and implement the design.
+**Then:** Synthesize design system + detailed searches and implement the design. Do NOT hallucinate — use search results only.
 
 ---
 
