@@ -72,15 +72,10 @@ Create a dashboard for healthcare analytics
 Design a portfolio website with dark mode
 ```
 
-### Command
-
-**`/ui-ux-promax <query> [--domain <d>] [--stack <s>]`**
+### Explicit Invoke
 
 ```
-/ui-ux-promax beauty spa wellness luxury
-/ui-ux-promax "glassmorphism dark" --domain style
-/ui-ux-promax "elegant serif" --domain typography
-/ui-ux-promax "form validation" --stack react
+/skills ui-ux-pro-max
 ```
 
 ### Direct CLI
@@ -124,16 +119,14 @@ python3 .qwen/skills/ui-ux-pro-max/scripts/search.py "SaaS dashboard" --design-s
 
 ```
 .qwen/
-├── skills/ui-ux-pro-max/
-│   ├── SKILL.md              # Skill definition (auto-activates)
-│   ├── data/                 # 11 CSV databases
-│   │   └── stacks/           # 13 stack-specific CSVs
-│   └── scripts/
-│       ├── search.py         # CLI entry point
-│       ├── core.py           # BM25 + regex hybrid engine
-│       └── design_system.py  # Design system generator
-└── commands/
-    └── ui-ux-promax.md       # /ui-ux-promax command
+└── skills/ui-ux-pro-max/
+    ├── SKILL.md              # Skill definition (auto-activates + /skills invoke)
+    ├── data/                 # 11 CSV databases
+    │   └── stacks/           # 13 stack-specific CSVs
+    └── scripts/
+        ├── search.py         # CLI entry point
+        ├── core.py           # BM25 + regex hybrid engine
+        └── design_system.py  # Design system generator
 ```
 
 ## Credits
