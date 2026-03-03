@@ -21,32 +21,15 @@ ENV/
 
 # Logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-build/
-.next/
-.nuxt/
-.output/
-out/
-
-# Cache
-.cache/
-.parcel-cache/
-.turbo/
 
 # Environment
 .env
 .env.local
 .env.*.local
 
-# Local settings
-.claude/settings.local.json
-ui-ux-pro-max-website/*
+# Generated output
+design-system/
+
+# Qwen Code user settings
+.qwen/settings.json
+plans/
