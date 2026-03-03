@@ -8,7 +8,9 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License"></a>
 </p>
 
-An AI skill for [Qwen Code](https://qwenlm.github.io/blog/qwen-code/) that provides design intelligence for building professional UI/UX. Uses a BM25 + regex hybrid search engine with 100 industry-specific reasoning rules to generate complete, tailored design systems.
+> **Port of [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) by [Next Level Builder](https://github.com/nextlevelbuilder) for [Qwen Code](https://qwenlm.github.io/blog/qwen-code/).** The original project is a Claude Code skill — this fork adapts it for the Qwen Code ecosystem.
+
+An AI skill for Qwen Code that provides design intelligence for building professional UI/UX. Uses a BM25 + regex hybrid search engine with 100 industry-specific reasoning rules to generate complete, tailored design systems.
 
 ## Features
 
@@ -22,17 +24,23 @@ An AI skill for [Qwen Code](https://qwenlm.github.io/blog/qwen-code/) that provi
 
 ## Installation
 
-1. Clone or copy the `.qwen/` folder into your project root
-2. Restart Qwen Code
-3. The skill auto-activates when you request UI/UX work
+### Quick Install (Recommended)
+
+Run this in your project root:
 
 ```bash
-# Option A: Clone this repo and copy .qwen/
-git clone https://github.com/user/ui-ux-pro-max-qwen.git
-cp -r ui-ux-pro-max-qwen/.qwen /path/to/your/project/
+curl -fsSL https://raw.githubusercontent.com/bienhoang/ui-ux-pro-max-qwen/main/setup.sh | sh
+```
 
-# Option B: Copy directly from an existing installation
-cp -r /path/to/ui-ux-pro-max-qwen/.qwen /path/to/your/project/
+Restart Qwen Code to activate.
+
+### Manual Install
+
+Copy the `.qwen/` folder into your project root:
+
+```bash
+git clone https://github.com/bienhoang/ui-ux-pro-max-qwen.git
+cp -r ui-ux-pro-max-qwen/.qwen /path/to/your/project/
 ```
 
 ## Prerequisites
@@ -137,6 +145,10 @@ python3 .qwen/skills/ui-ux-pro-max/scripts/search.py "SaaS dashboard" --design-s
     └── ui-search.md          # /ui-search command
 ```
 
+## Credits
+
+This project is a port of [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) by [Next Level Builder](https://github.com/nextlevelbuilder), originally built as a Claude Code skill. All design databases, reasoning rules, and search engine logic originate from the upstream project.
+
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) — Original work by Next Level Builder, Qwen Code adaptation by Bien Hoang.
