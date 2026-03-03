@@ -4,6 +4,21 @@ All notable changes to UI UX Pro Max for Qwen Code.
 
 This project is a port of [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) for the Qwen Code ecosystem.
 
+## [1.1.0] - 2026-03-03
+
+### Changed
+
+- Remove duplicate command file — SKILL.md is now single source of truth
+- Use `/skills ui-ux-pro-max` for explicit invocation (Qwen Code native)
+- All script paths use `$HOME/.qwen/` absolute paths for reliability
+- Step 3 (domain searches) marked REQUIRED — minimum 2 searches to prevent hallucination
+- SKILL.md expanded with Rule Categories, Quick Reference, Persist Design System, Output Formats, Tips
+
+### Removed
+
+- `/design` and `/ui-search` commands (replaced by `/skills ui-ux-pro-max`)
+- `.qwen/commands/` directory (no longer needed)
+
 ## [1.0.0] - 2026-03-03
 
 ### Added
